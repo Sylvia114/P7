@@ -1,0 +1,67 @@
+.homeBody{
+    margin: 30px 90px;
+}
+
+/*Banniére */
+.homeContainer{
+    height: 223px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeImage{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    filter: brightness(70%)
+}
+
+.homeText{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    color: white;
+    position: absolute;
+    z-index: 3;
+    width: 70%;
+    text-align: center;
+}
+
+
+@media screen and (min-width:377px) and (max-width:768px){
+    .homeBody {
+        margin: 20px 20px;
+    }
+
+    .homeText{
+        font-size: 30px;
+        padding-left: 0px;
+    }
+
+}
+
+@media screen and (max-width: 376px) {
+    .homeBody{
+        margin: 20px 20px;
+    }
+
+    .homeContainer{
+        height: 111px;
+        width: 100%;
+        border-radius: 10px;
+        justify-content:flex-start;
+    }
+
+    .homeImage{
+        border-radius: 10px;
+    }
+
+    .homeText{
+        font-size: 24px;
+        padding-left: 16px;
+    }
+
+}

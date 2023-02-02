@@ -1,0 +1,22 @@
+.ratingContainer{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ratingStars{
+    height: 30px;
+    width: 30px;
+}
+
+@media screen and (max-width: 376px) {
+    .ratingContainer{
+        width: 100px;
+    }
+
+    .ratingStars{
+        height: 15px;
+        width: 15px;
+    }
+
+}

@@ -1,0 +1,27 @@
+.tags{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 142.6%;
+    text-align: center;
+    color: #FFFFFF;
+    height: 25px;
+    width: 155px;
+    background: #FF6060;
+    border-radius: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 376px) {
+    .tags{
+        font-size: 10px;
+        height: 18px;
+        width: 84px;
+        border-radius: 5px;
+    }
+
+}

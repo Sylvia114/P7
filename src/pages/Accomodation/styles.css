@@ -1,0 +1,142 @@
+.accomodationBody{
+    margin: 30px 90px;
+}
+
+.accomodationDetails{
+    justify-content: center;
+}
+
+/* Format du texte */
+.accomodationTitle, .accomodationLocation, .profilName{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    color: #FF6060;
+    line-height: 0px;
+}
+
+/*Informations titre, lieu et tags */
+.accomodationInfos{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.accomodationTitle{
+    font-size: 36px;
+}
+
+.accomodationLocation{
+    font-size: 18px;
+}
+
+.text{
+    margin-bottom: 20px;
+}
+
+.accomodationTags{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/*Informations sur l'hôte */
+
+.host{
+    display: flex;
+}
+
+.profilName{
+    font-size: 18px;
+}
+
+.profilPic{
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.pictureBackground{
+    background: gainsboro;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* Collapse pour la description et les équipements */
+.accomodationCollapse{
+    display: flex;
+    justify-content: space-between;
+}
+
+.accomodationDescription{
+    width: 48%;
+}
+
+.facilities{
+    width: 48%;
+}
+
+@media screen and (min-width:377px) and (max-width:768px){
+    .accomodationBody{
+        margin: 20px 20px;
+    }
+
+    .accomodationInfos{
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 376px) {
+    .accomodationBody{
+        margin: 20px 20px;
+    }
+
+    .accomodationInfos{
+        flex-direction: column;
+    }
+
+    .accomodationTitle{
+        display: flex;
+        font-size: 18px;
+    }
+    
+    .accomodationLocation{
+        font-size: 14px;
+    }
+
+    .profilName{
+        font-size: 12px;
+    }
+
+    .profilPic{
+        width: 32px;
+        height: 32px;
+    }
+    
+    .pictureBackground{
+        width: 32px;
+        height: 32px;
+    }
+
+    .hostRating{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .accomodationCollapse{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .accomodationDescription{
+        width: 100%;
+    }
+    
+    .facilities{
+        width: 100%;
+    }
+}
