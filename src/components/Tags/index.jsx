@@ -3,11 +3,9 @@ import '../../components/Tags/styles.css'
 function Tags({ tags }) {    
 
     return(
-        <div>
-            {tags.map((tag, index) => (
-                <p key={index}>{tag}</p>
-                    ))}
-                </div>
+        <div className='tagsDisplay'>
+            {tags.map((tag, index) => (<div key={index} className='tags'>{tag}</div>))}
+        </div>
         
     )
 }

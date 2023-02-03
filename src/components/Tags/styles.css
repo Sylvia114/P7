@@ -1,3 +1,7 @@
+.tagsDisplay{
+    display: flex;
+}
+
 .tags{
     font-family: 'Montserrat';
     font-style: normal;
