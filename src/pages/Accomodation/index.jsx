@@ -31,9 +31,7 @@ function Accomodation(){
                 </div>
 
                 <div className="accomodationTags">
-                    {info.tags.map((tag, index) => (
-                    <Tags key={index} tag={tag} />
-                    ))}
+                    <Tags tags={info.tags}/>
                 </div>
             </div>          
 

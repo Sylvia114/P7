@@ -1,9 +1,14 @@
 import '../../components/Tags/styles.css'
 
-function Tags({ tag }) {    
+function Tags({ tags }) {    
 
     return(
-        <div className='tags'>{tag}</div>
+        <div>
+            {tags.map((tag, index) => (
+                <p key={index}>{tag}</p>
+                    ))}
+                </div>
+        
     )
 }
 
