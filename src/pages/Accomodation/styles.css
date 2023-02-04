@@ -2,53 +2,37 @@
     margin: 30px 90px;
 }
 
-.accomodationDetails{
-    justify-content: center;
+.accomodationInfos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
 }
 
 /* Format du texte */
 .accomodationTitle, .accomodationLocation, .profilName{
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     color: #FF6060;
-    line-height: 0px;
-}
-
-/*Informations titre, lieu et tags */
-.accomodationInfos{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 24px;
 }
 
 .accomodationTitle{
     font-size: 36px;
 }
 
-.accomodationLocation{
+.accomodationLocation, .profilName{
     font-size: 18px;
 }
 
-.text{
-    margin-bottom: 20px;
-}
-
-/*
-.accomodationTags{
+/* Information du profil */
+.hostInfo{
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}*/
-
-/*Informations sur l'hôte */
-
-.host{
-    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .profilName{
-    font-size: 18px;
+    width: 93px;
 }
 
 .profilPic{
@@ -65,18 +49,15 @@
     overflow: hidden;
 }
 
-/* Collapse pour la description et les équipements */
+/* Collapse */
 .accomodationCollapse{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
-.accomodationDescription{
-    width: 48%;
-}
-
-.facilities{
-    width: 48%;
+.accomodationDescription, .facilities{
+    width: 49%;
 }
 
 @media screen and (min-width:377px) and (max-width:768px){
@@ -85,46 +66,17 @@
     }
 
     .accomodationInfos{
-        flex-direction: column;
-    }
-
-}
-
-@media screen and (max-width: 376px) {
-    .accomodationBody{
-        margin: 20px 20px;
-    }
-
-    .accomodationInfos{
-        flex-direction: column;
-    }
-
-    .accomodationTitle{
         display: flex;
-        font-size: 18px;
-    }
-    
-    .accomodationLocation{
-        font-size: 14px;
+        flex-direction: column;
+        align-items: normal;
+        margin-bottom: 0px;
     }
 
-    .profilName{
-        font-size: 12px;
-    }
-
-    .profilPic{
-        width: 32px;
-        height: 32px;
-    }
-    
-    .pictureBackground{
-        width: 32px;
-        height: 32px;
-    }
-
-    .hostRating{
+    .host{
         display: flex;
         flex-direction: row-reverse;
+        flex-wrap: wrap;
+        align-items: center;
         justify-content: space-between;
     }
 
@@ -133,11 +85,57 @@
         flex-direction: column;
     }
 
-    .accomodationDescription{
+    .accomodationDescription, .facilities{
         width: 100%;
     }
+}
+
+@media screen and (max-width:376px){
+    .accomodationBody{
+        margin: 20px 20px;
+    }
+
+    .accomodationInfos{
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .accomodationTitle{
+        font-size: 18px;
+    }
     
-    .facilities{
+    .accomodationLocation{
+        font-size: 14px;
+    }
+    
+    .profilName{
+        font-size: 12px;
+    }
+
+    .host{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hostInfo{
+        align-items: center;
+    }
+
+    .profilPic, .pictureBackground{
+        width: 32px;
+        height: 32px;
+    }
+
+    .accomodationCollapse{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .accomodationDescription, .facilities{
         width: 100%;
     }
 }

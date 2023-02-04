@@ -16,12 +16,16 @@ function Carousel({ pictures }) {
     }; 
 
     return (
-        <div className="carousel">
+        <div className="carousel"> 
+            <div className="carouselImageContainer">           
             <img key={pictures.id} src={pictures[current]} alt={pictures.title} className="carouselImage"/>            
+            </div>
+
             <div className="carouselIcon">
-                <img className="carouselIconNext" src={nextArrow} onClick={next} alt="Photo suivante"/>
-                <img className="carouselIconPrev" src={prevArrow} onClick={prev} alt="Photo précedente"/>                    
-            </div>                      
+            <img className="carouselIconNext" src={nextArrow} onClick={next} alt="Photo suivante"/>
+            <img className="carouselIconPrev" src={prevArrow} onClick={prev} alt="Photo précedente"/>
+            </div>                                 
+                                  
         </div>
     )
 }

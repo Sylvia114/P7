@@ -16,7 +16,7 @@ function Accomodation(){
     }
 
     return (
-        <body className="accomodationBody">
+        <section className="accomodationBody">
             <Carousel
                 key={info.id}
                 pictures={info.pictures} 
@@ -25,22 +25,23 @@ function Accomodation(){
             <div className="accomodationInfos">
 
             <div className="accomodationDetails">
-                <div className="text">
+                <div>
                 <h2 className="accomodationTitle">{info.title}</h2>
                 <h3 className="accomodationLocation"> {info.location}</h3>
                 </div>
 
-                <div className="accomodationTags">
+                <div>
                     <Tags tags={info.tags}/>
                 </div>
             </div>          
 
-            <div className="hostRating">
+            <div className="host">
             
-            <div className="host">                              
+            <div className="hostInfo">                              
                 <p className="profilName">{info.host && info.host.name}</p>
                 <div className="pictureBackground"><img src={info.host && info.host.picture} alt="photo de profil" className="profilPic"/></div>
             </div>
+
             <Rating rating={info.rating} />
             
             </div>
@@ -66,7 +67,7 @@ function Accomodation(){
             </div>
             </div>
             
-         </body>
+         </section>
     )
     }
 

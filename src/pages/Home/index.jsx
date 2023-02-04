@@ -4,7 +4,7 @@ import homeBackground from '../../assets/homeBackground.png';
 import Card from '../../components/Card/index';
 
 function Home() {
-  return <body className='homeBody'>
+  return <section className='homeBody'>
 
   <div className='homeContainer'>   
   <h2 className='homeText'>Chez vous, partout et ailleurs</h2>
@@ -14,7 +14,7 @@ function Home() {
 
   <Card />
 
-</body>
+</section>
 }
 
 export default Home

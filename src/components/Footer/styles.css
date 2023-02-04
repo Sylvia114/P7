@@ -1,11 +1,11 @@
 footer{    
     width: 100%;
+    height: 209px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 209px;
     background-color: black;
 }
 
@@ -23,6 +23,13 @@ footer{
     font-size: 24px;
     line-height: 142.6%;
     color: white;
+}
+
+@media screen and (min-width:377px) and (max-width:768px){
+    .copyrightFooter{
+        font-size: 16px;
+    }
+
 }
 
 @media screen and (max-width: 376px) {

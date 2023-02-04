@@ -1,9 +1,9 @@
 .tagsDisplay{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .tags{
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -18,14 +18,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 376px) {
     .tags{
         font-size: 10px;
         height: 18px;
-        width: 84px;
+        width: 105px;
         border-radius: 5px;
+
     }
 
 }

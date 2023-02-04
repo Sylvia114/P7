@@ -1,5 +1,5 @@
 header{
-    display: flex;
+    display: flex;;
     justify-content: space-between;
     align-items: center;
     margin: 30px 90px;
@@ -40,6 +40,10 @@ nav{
     .logo{
         height: 30%;  /* 47px */
         width: 100%;
+    }
+
+    nav{
+        width: 85%;
     }
 
     .navbar-home, .navbar-aboutUs{
