@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import { list } from '../../datas/list'
 import '../../components/Card/styles.css'
@@ -9,6 +8,7 @@ function Card() {
         <div className='galleryHome'>
         {list.map((accomodation) => (
             <Link to={`/accomodation/${accomodation.id}`} className='cardLink'
+            
             key={accomodation.id}>
                 <div className='cardElement'>
                     <img src={accomodation.cover} alt="photo du logement" className='cardImage'/>

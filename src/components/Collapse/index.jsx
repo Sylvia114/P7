@@ -4,7 +4,6 @@ import ArrowUp from '../../assets/arrowUp.png'
 import '../../components/Collapse/styles.css'
 
 function Collapse({title, description}){
-
   const [open, setOpen] = useState(false);
 
   return (

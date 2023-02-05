@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Collapse from '../../components/Collapse'
 import '../../pages/AboutUs/styles.css'
 import aboutusBackground from '../../assets/aboutusBackground.png'

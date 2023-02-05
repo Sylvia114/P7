@@ -1,5 +1,4 @@
 import '../../pages/Home/styles.css'
-import { list } from '../../datas/list';
 import homeBackground from '../../assets/homeBackground.png';
 import Card from '../../components/Card/index';
 

@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import '../../components/Error/styles.css'
 
-
 function Error() {
     return (
         <div className='errorContainer'>

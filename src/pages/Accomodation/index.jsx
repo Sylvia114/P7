@@ -1,14 +1,15 @@
-import Collapse from "../../components/Collapse"
 import { list } from '../../datas/list';
 import '../../pages/Accomodation/styles.css'
+
+import Collapse from "../../components/Collapse"
 import Carousel from "../../components/Carousel";
 import Tags from "../../components/Tags"
 import Rating from "../../components/Rating";
+
 import { useParams, Navigate } from "react-router-dom";
 
 
 function Accomodation(){
-
     const { id } = useParams();
     const info = list.find((accomodation) => accomodation.id === id)
     if(!info) {
@@ -38,8 +39,8 @@ function Accomodation(){
             <div className="host">
             
             <div className="hostInfo">                              
-                <p className="profilName">{info.host && info.host.name}</p>
-                <div className="pictureBackground"><img src={info.host && info.host.picture} alt="photo de profil" className="profilPic"/></div>
+                <p className="profilName">{info.host.name}</p>
+                <div className="pictureBackground"><img src={info.host.picture} alt="photo de profil" className="profilPic"/></div>
             </div>
 
             <Rating rating={info.rating} />
