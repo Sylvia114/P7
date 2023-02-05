@@ -64,6 +64,10 @@
         height: 255px;
         border-radius: 10px;
     }
+
+    .carouselImage{
+        border-radius: 10px;
+    }
   
     .carouselIconPrev{
         height: 19px;

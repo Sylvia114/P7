@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { list } from '../../datas/list'
 import '../../components/Card/styles.css'
 
-function Card({ title, cover, id }) {
+function Card() {
 
     return (
         <div className='galleryHome'>
@@ -19,11 +19,6 @@ function Card({ title, cover, id }) {
         ))}
         </div>
     )
-}
-
-Card.propTypes = {
-    cover : PropTypes.string,
-    title : PropTypes.string,
 }
  
 export default Card
