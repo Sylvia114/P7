@@ -19,7 +19,6 @@ function Accomodation(){
     return (
         <section className="accomodationBody">
             <Carousel
-                key={info.id}
                 pictures={info.pictures} 
             />
 
